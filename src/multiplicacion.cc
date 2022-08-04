@@ -1,4 +1,4 @@
-#include "../include/trinomios";
+#include "../include/trinomios"
 
 void ProductoTrinomios(int a1, int b1, int c1, int a2, int b2, int c2, int array[]) {
     array[0] = (a1 * a2);

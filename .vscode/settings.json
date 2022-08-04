@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "arith": "c",
-        "trinomios": "cpp"
+        "trinomios": "cpp",
+        "ostream": "cpp"
     }
 }
