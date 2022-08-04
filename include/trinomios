@@ -1,5 +1,5 @@
-#if !defined(ARITH)
-#define ARITH
+#if !defined(TRINOMIOS)
+#define TRINOMIOS
 
 /** @brief Multiplica 2 trinomios de la forma ax² + bx + c
  * @param a1 Representa a₁x²
@@ -12,16 +12,15 @@
  */
 void ProductoTrinomios(int a1, int b1, int c1, int a2, int b2, int c2, int array[]);
 
-/** @brief Divide 2 trinomios de la forma ax² + bx + c
+/** @brief Divide un trinomios de la forma ax² + bx + c entre un binomio de la forma ax² + c
  * @param a1 Representa a₁x²
  * @param b1 Representa b₁x
  * @param c1 Representa c₁
  * @param a2 Representa a₂x²
- * @param b2 Representa b₂x
- * @param c2 Representa c₂
+ * @param b2 Representa c₂
  * @returns (a₁x² + b₁x + c₁) * (a₂x² + b₂x + c₂) en un arreglo compuesto como [a1 * b2, a1 * b2 + b1 * a2, a1 * c2 + b1 * b2 + c1 * a2, b1 * c2 + c1 * b2, c1 * c2]
  */
-void DivisionTrinomios(int a1, int b1, int c1, int a2, int b2, int c2, int array[]);
+void DivisionTrinomios(int a1, int b1, int c1, int a2, int b2, int array[]);
 
 /** @brief Suma 2 trinomios de la forma ax² + bx + c
  * @param a1 Representa a₁x²
