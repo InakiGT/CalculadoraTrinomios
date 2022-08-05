@@ -2,6 +2,7 @@
     "files.associations": {
         "arith": "c",
         "trinomios": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iostream": "cpp"
     }
 }
