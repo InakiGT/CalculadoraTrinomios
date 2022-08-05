@@ -3,11 +3,19 @@
 
  - app
  - include
+    - trinomios
  - lib
 	 - dll
+        - libtrinomios.so
 	 - static
+        - libtrinomios.a
  - obj
  - src
+    - suma.cc
+    - resta.cc
+    - multiplicacion.cc
+    - division.cc
+    - completar-trinomio.cc
 
 ## Comandos utilizados para la compilación de librerías
 
