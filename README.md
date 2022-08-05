@@ -24,7 +24,7 @@
     g++ -c ./src/resta.cc -o ./obj/resta.o -I ./include
     g++ -c ./src/multiplicacion.cc -o ./obj/multiplicacion.o -I ./include
     g++ -c ./src/division.cc -o ./obj/division.o -I ./include
-    g++ -c ./src/completar-trinomio.cc -o ./obj/completar-trinomios.o -I ./include
+    g++ -c ./src/completar-trinomio.cc -o ./obj/completar-trinomio.o -I ./include
     ar crs ./lib/static/libtrinomios.a ./obj/*.o
 
 ### Dinámica
