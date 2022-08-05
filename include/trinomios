@@ -18,9 +18,9 @@ void ProductoTrinomios(int a1, int b1, int c1, int a2, int b2, int c2, int array
  * @param c1 Representa c₁
  * @param a2 Representa a₂x²
  * @param b2 Representa c₂
- * @returns (a₁x² + b₁x + c₁) / (a₂x² + c₂) en un arreglo compuesto como [a1 * b2, a1 * b2 + b1 * a2, a1 * c2 + b1 * b2 + c1 * a2, b1 * c2 + c1 * b2, c1 * c2]
+ * @returns (a₁x² + b₁x + c₁) / (a₂x² + c₂) en un arreglo compuesto como [a1 / a2, (b1 - (b2 * array[0])) / a2 )] en caso de que sea divisible y [0, 0] en caso de no ser divisible
  */
-void DivisionTrinomio(int a1, int b1, int c1, int a2, int b2, int array[]);
+void DivisionTrinomioEntreBinomio(int a1, int b1, int c1, int a2, int c2, int array[]);
 
 /** @brief Suma 2 trinomios de la forma ax² + bx + c
  * @param a1 Representa a₁x²

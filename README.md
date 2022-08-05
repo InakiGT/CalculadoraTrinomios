@@ -32,7 +32,7 @@
     g++ -c -fPIC ./src/resta.cc -o ./obj/resta.o -I ./include
     g++ -c -fPIC ./src/multiplicacion.cc -o ./obj/multiplicacion.o -I ./include
     g++ -c -fPIC ./src/division.cc -o ./obj/division.o -I ./include
-    g++ -c -fPIC ./src/completar-trinomio.cc -o ./obj/completar-trinomios.o -I ./include
+    g++ -c -fPIC ./src/completar-trinomio.cc -o ./obj/completar-trinomio.o -I ./include
     g++ -shared -o libtrinomios.so ./obj/completar-trinomio.o ./obj/multiplicacion.o ./obj/suma.o ./obj/resta.o 
 ## Uso de la biblioteca
 ### Importación estática
@@ -62,11 +62,11 @@ La función **ProductoTrinomios** recibe como argumentos 6 números enteros, que
     int  array[3];
 	ProductoTrinomios(1,  2,  3,  4,  5,  6,  array);
 
-  ### División de Trinomios
-La función **DivisionTrinomios** recibe como argumentos 5 números enteros, que forman (a₁x² + b₁x + c₁) / (a₂x² + c₂) y un apuntador a un arreglo de 3 elementos en donde se almacenará el resultado de la multiplicación
+  ### División de Trinomio entre binomio
+La función **DivisionTrinomioEntreBinomio** recibe como argumentos 5 números enteros, que forman (a₁x² + b₁x + c₁) / (a₂x² + c₂) y un apuntador a un arreglo de 2 elementos en donde se almacenará el resultado de la división sin residuo
 
     int  array[3];
-	DivisionTrinomios(1,  2,  3,  4,  5,  6,  array);
+	DivisionTrinomioEntreBinomio(2,  2,  5,  4,  5  array);
 
   ### Completar el Trinomio
 La función **CompletarTrinomio** recibe como argumentos 3 números enteros, que forman (ax² + bx + z)  y un apuntador a un arreglo de 3 elementos en donde se almacenará el resultado de la multiplicación
