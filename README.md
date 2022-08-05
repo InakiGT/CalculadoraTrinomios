@@ -67,13 +67,13 @@ La función **RestaTrinomios** recibe como argumentos 6 números enteros, que fo
   ### Producto de Trinomios
 La función **ProductoTrinomios** recibe como argumentos 6 números enteros, que forman (a₁x² + b₁x + c₁) * (a₂x² + b₂x + c₂) y un apuntador a un arreglo de 5 elementos en donde se almacenará el resultado de la multiplicación
 
-    int  array[3];
+    int  array[5];
 	ProductoTrinomios(1,  2,  3,  4,  5,  6,  array);
 
   ### División de Trinomio entre binomio
 La función **DivisionTrinomioEntreBinomio** recibe como argumentos 5 números enteros, que forman (a₁x² + b₁x + c₁) / (a₂x² + c₂) y un apuntador a un arreglo de 2 elementos en donde se almacenará el resultado de la división sin residuo
 
-    int  array[3];
+    int  array[2];
 	DivisionTrinomioEntreBinomio(2,  2,  5,  4,  5  array);
 
   ### Completar el Trinomio
