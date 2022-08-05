@@ -12,25 +12,27 @@
 ## Comandos utilizados para la compilación de librerías
 
 ### Estática
-    g++ -c ./src/suma -o ./obj/suma -I ./include
-    g++ -c ./src/resta -o ./obj/resta -I ./include
+    g++ -c ./src/suma.cc -o ./obj/suma.o -I ./include
+    g++ -c ./src/resta.cc -o ./obj/resta.o -I ./include
     g++ -c ./src/multiplicacion.cc -o ./obj/multiplicacion.o -I ./include
-    g++ -c ./src/division -o ./obj/division -I ./include
-    g++ -c ./src/completar-trinomios -o ./obj/completar-trinomios -I ./include
-    ar crs ./lib/static/libtrinomios.a ./obj/*.o   
-    g++ main.cc -o app/test -I ./lib/include -L ./lib/static -ltrinomios 
+    g++ -c ./src/division.cc -o ./obj/division.o -I ./include
+    g++ -c ./src/completar-trinomio.cc -o ./obj/completar-trinomios.o -I ./include
+    ar crs ./lib/static/libtrinomios.a ./obj/*.o
 
 ### Dinámica
-
-    ar crs ./lib/static/libtrinomios.a ./obj/*.o   
-
+    g++ -c -fPIC ./src/suma.cc -o ./obj/suma.o -I ./include
+    g++ -c -fPIC ./src/resta.cc -o ./obj/resta.o -I ./include
+    g++ -c -fPIC ./src/multiplicacion.cc -o ./obj/multiplicacion.o -I ./include
+    g++ -c -fPIC ./src/division.cc -o ./obj/division.o -I ./include
+    g++ -c -fPIC ./src/completar-trinomio.cc -o ./obj/completar-trinomios.o -I ./include
+    g++ -shared -o libtrinomios.so ./obj/completar-trinomio.o ./obj/multiplicacion.o ./obj/suma.o ./obj/resta.o 
 ## Uso de la biblioteca
 ### Importación estática
 Para utilizar la biblioteca estática se debe importar la cabecera dentro del archivo donde se utilizará
 	
     #include  "./include/trinomios"
 ### Importación dinámica
-Para utilizar la biblioteca estática se debe importar la cabecera dentro del archivo donde se utilizará
+Para utilizar la biblioteca dinámica se debe importar la cabecera dentro del archivo donde se utilizará
 	
     #include  "./include/trinomios"
 

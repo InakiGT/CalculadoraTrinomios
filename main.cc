@@ -1,4 +1,4 @@
-#include "./include/trinomios"
+#include <trinomios>
 #include <iostream>
 
 using namespace std;
