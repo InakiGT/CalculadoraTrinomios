@@ -2,6 +2,9 @@
 ## Estructura de directorios
 
  - app
+    - test
+    - test1
+    - test2
  - include
     - trinomios
  - lib
@@ -10,6 +13,11 @@
 	 - static
         - libtrinomios.a
  - obj
+    - completar-trinomio.o
+    - division.o
+    - multiplicacion.o
+    - resta.o
+    - suma.o
  - src
     - suma.cc
     - resta.cc
@@ -33,7 +41,7 @@
     g++ -c -fPIC ./src/multiplicacion.cc -o ./obj/multiplicacion.o -I ./include
     g++ -c -fPIC ./src/division.cc -o ./obj/division.o -I ./include
     g++ -c -fPIC ./src/completar-trinomio.cc -o ./obj/completar-trinomio.o -I ./include
-    g++ -shared -o ./lib/dll/libtrinomios.so ./obj/completar-trinomio.o ./obj/multiplicacion.o ./obj/suma.o ./obj/resta.o 
+    g++ -shared -o ./lib/dll/libtrinomios.so ./obj/completar-trinomio.o ./obj/multiplicacion.o ./obj/division.o ./obj/suma.o ./obj/resta.o 
 ## Uso de la biblioteca
 ### Importación estática
 Para utilizar la biblioteca estática se debe importar la cabecera dentro del archivo donde se utilizará
