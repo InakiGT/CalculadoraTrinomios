@@ -34,6 +34,7 @@
     g++ -c ./src/division.cc -o ./obj/division.o -I ./include
     g++ -c ./src/completar-trinomio.cc -o ./obj/completar-trinomio.o -I ./include
     ar crs ./lib/static/libtrinomios.a ./obj/*.o
+    ar crs .\lib\static\trinomios.lib .\obj\*.o #Windows
 
 ### Dinámica
     g++ -c -fPIC ./src/suma.cc -o ./obj/suma.o -I ./include
