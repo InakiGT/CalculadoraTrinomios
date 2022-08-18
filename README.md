@@ -11,7 +11,7 @@
 	 - dll
         - libtrinomios.so
 	 - static
-        - libtrinomios.a
+        - trinomios.lib
  - obj
     - completar-trinomio.o
     - division.o
