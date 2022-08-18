@@ -25,7 +25,7 @@
     - division.cc
     - completar-trinomio.cc
 
-## Comandos utilizados para la compilación de librerías
+## Comandos utilizados para la compilación de bibliotecas
 
 ### Estática
     g++ -c ./src/suma.cc -o ./obj/suma.o -I ./include
@@ -74,7 +74,7 @@ La función **ProductoTrinomios** recibe como argumentos 6 números enteros, que
 La función **DivisionTrinomioEntreBinomio** recibe como argumentos 5 números enteros, que forman (a₁x² + b₁x + c₁) / (a₂x² + c₂) y un apuntador a un arreglo de 2 elementos en donde se almacenará el resultado de la división sin residuo
 
     int  array[2];
-	DivisionTrinomioEntreBinomio(2,  2,  5,  4,  5  array);
+	DivisionTrinomioEntreBinomio(2,  2,  5,  4,  5,  array);
 
   ### Completar el Trinomio
 La función **CompletarTrinomio** recibe como argumentos 3 números enteros, que forman (ax² + bx + z)  y un apuntador a un arreglo de 3 elementos en donde se almacenará el resultado de la multiplicación

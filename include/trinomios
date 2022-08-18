@@ -8,6 +8,7 @@
  * @param a2 Representa a₂x²
  * @param b2 Representa b₂x
  * @param c2 Representa c₂
+ * @param array Es un apuntador a un arreglo donde se almacenará el resultado
  * @returns (a₁x² + b₁x + c₁) * (a₂x² + b₂x + c₂) en un arreglo compuesto como [a1 * b2, a1 * b2 + b1 * a2, a1 * c2 + b1 * b2 + c1 * a2, b1 * c2 + c1 * b2, c1 * c2]
  */
 void ProductoTrinomios(int a1, int b1, int c1, int a2, int b2, int c2, int array[]);
@@ -18,6 +19,7 @@ void ProductoTrinomios(int a1, int b1, int c1, int a2, int b2, int c2, int array
  * @param c1 Representa c₁
  * @param a2 Representa a₂x²
  * @param b2 Representa c₂
+ * @param array Es un apuntador a un arreglo donde se almacenará el resultado*
  * @returns (a₁x² + b₁x + c₁) / (a₂x² + c₂) en un arreglo compuesto como [a1 / a2, (b1 - (b2 * array[0])) / a2 )] en caso de que sea divisible y [0, 0] en caso de no ser divisible
  */
 void DivisionTrinomioEntreBinomio(int a1, int b1, int c1, int a2, int c2, int array[]);
@@ -29,6 +31,7 @@ void DivisionTrinomioEntreBinomio(int a1, int b1, int c1, int a2, int c2, int ar
  * @param a2 Representa a₂x²
  * @param b2 Representa b₂x
  * @param c2 Representa c₂
+ * @param array Es un apuntador a un arreglo donde se almacenará el resultado
  * @returns (a₁x² + b₁x + c₁) + (a₂x² + b₂x + c₂) en un arreglo compuesto como [a1 + a2, b1 + b2, c1 + c2]
  */
 void SumaTrinomios(int a1, int b1, int c1, int a2, int b2, int c2, int array[]);
@@ -40,6 +43,7 @@ void SumaTrinomios(int a1, int b1, int c1, int a2, int b2, int c2, int array[]);
  * @param a2 Representa a₂x²
  * @param b2 Representa b₂x
  * @param c2 Representa c₂
+* @param array Es un apuntador a un arreglo donde se almacenará el resultado
  * @returns (a₁x² + b₁x + c₁) - (a₂x² + b₂x + c₂) en un arreglo compuesto como [a1 - a2, b1 - b2, c1 - c2]
  */
 void RestaTrinomios(int a1, int b1, int c1, int a2, int b2, int c2, int array[]);
@@ -48,6 +52,7 @@ void RestaTrinomios(int a1, int b1, int c1, int a2, int b2, int c2, int array[])
  * @param a Representa ax²
  * @param b Representa bx
  * @param c Representa z
+ * @param array Es un apuntador a un arreglo donde se almacenará el resultado
  * @returns ax² + bx + c en un arreglo compuesto como [a, b, c]
  */
 void CompletarTrinomio(int a, int b, int c, int array[]);
