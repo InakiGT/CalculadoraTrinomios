@@ -34,7 +34,7 @@
     g++ -c ./src/division.cc -o ./obj/division.o -I ./include
     g++ -c ./src/completar-trinomio.cc -o ./obj/completar-trinomio.o -I ./include
     ar crs ./lib/static/libtrinomios.a ./obj/*.o
-    ar crs .\lib\static\trinomios.lib .\obj\*.o #Windows
+    ar crs .\lib\static\trinomios.lib .\obj\*.o # Windows
 
 ### Dinámica
     g++ -c -fPIC ./src/suma.cc -o ./obj/suma.o -I ./include
@@ -43,6 +43,7 @@
     g++ -c -fPIC ./src/division.cc -o ./obj/division.o -I ./include
     g++ -c -fPIC ./src/completar-trinomio.cc -o ./obj/completar-trinomio.o -I ./include
     g++ -shared -o ./lib/dll/libtrinomios.so ./obj/completar-trinomio.o ./obj/multiplicacion.o ./obj/division.o ./obj/suma.o ./obj/resta.o 
+    g++ -shared -o .\lib\dll\libtrinomios.lib .\obj\*.o # Windows
 ## Uso de la biblioteca
 ### Importación estática
 Para utilizar la biblioteca estática se debe importar la cabecera dentro del archivo donde se utilizará
