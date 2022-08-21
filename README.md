@@ -43,7 +43,7 @@
     g++ -c -fPIC ./src/division.cc -o ./obj/division.o -I ./include
     g++ -c -fPIC ./src/completar-trinomio.cc -o ./obj/completar-trinomio.o -I ./include
     g++ -shared -o ./lib/dll/libtrinomios.so ./obj/*o 
-    g++ -shared -o .\lib\dll\libtrinomios.lib .\obj\*.o # Windows
+    g++ -shared -o .\lib\dll\libtrinomios.dll .\obj\*.o # Windows
 ## Uso de la biblioteca
 ### Importación estática
 Para utilizar la biblioteca estática se debe importar la cabecera dentro del archivo donde se utilizará
