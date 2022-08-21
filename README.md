@@ -9,7 +9,7 @@
     - trinomios
  - lib
 	 - dll
-        - libtrinomios.so
+        - libtrinomios.dll
 	 - static
         - trinomios.lib
  - obj
