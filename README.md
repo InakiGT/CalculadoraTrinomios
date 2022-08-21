@@ -42,7 +42,7 @@
     g++ -c -fPIC ./src/multiplicacion.cc -o ./obj/multiplicacion.o -I ./include
     g++ -c -fPIC ./src/division.cc -o ./obj/division.o -I ./include
     g++ -c -fPIC ./src/completar-trinomio.cc -o ./obj/completar-trinomio.o -I ./include
-    g++ -shared -o ./lib/dll/libtrinomios.so ./obj/completar-trinomio.o ./obj/multiplicacion.o ./obj/division.o ./obj/suma.o ./obj/resta.o 
+    g++ -shared -o ./lib/dll/libtrinomios.so ./obj/*o 
     g++ -shared -o .\lib\dll\libtrinomios.lib .\obj\*.o # Windows
 ## Uso de la biblioteca
 ### Importación estática
